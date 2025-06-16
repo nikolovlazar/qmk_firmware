@@ -48,8 +48,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_FN1] = LAYOUT_ansi_69(
         _______, _______,    _______,    _______,   KC_MPRV,   KC_MPLY,   KC_MNXT,    KC_BRID,   KC_BRIU,   _______,   _______,   _______,   _______,   _______,          _______,
         _______, _______,  _______,  _______, _______, KC_VOLU, _______,  _______, _______, _______, _______,  _______,  _______,  _______,          _______,
-        _______, _______,  KC_HOME,  KC_PGUP, LSG(KC_LBRC), KC_VOLD,           _______, _______, _______, _______,  _______,  _______,  _______,          _______,
-        _______,           _______,  KC_END, KC_PGDN, LSG(KC_RBRC), KC_MUTE,  _______, _______, _______, _______,  _______,  _______,  _______, _______,
+        _______, _______,  KC_HOME,  KC_PGUP, LSG(KC_RBRC), KC_VOLD,           _______, _______, _______, _______,  _______,  _______,  _______,          _______,
+        _______,           _______,  KC_END, KC_PGDN, LSG(KC_LBRC), KC_MUTE,  _______, _______, _______, _______,  _______,  _______,  _______, _______,
         _______, _______,  _______,           _______,          _______,  _______,          _______,           _______,            _______, _______, _______),
 
     // Windows Layer 1
@@ -95,11 +95,11 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
 
     if (layer == 2) {
         // Layer 1: Light specific keys (replace indices with actual values)
-        rgb_matrix_set_color(4, 238, 255, 1);
-        rgb_matrix_set_color(5, 238, 255, 1);
-        rgb_matrix_set_color(6, 238, 255, 1);
-        rgb_matrix_set_color(7, 238, 255, 1);
-        rgb_matrix_set_color(8, 238, 255, 1);
+        rgb_matrix_set_color(4, 1, 238, 255);
+        rgb_matrix_set_color(5, 1, 238, 255);
+        rgb_matrix_set_color(6, 1, 238, 255);
+        rgb_matrix_set_color(7, 1, 238, 255);
+        rgb_matrix_set_color(8, 1, 238, 255);
 
         rgb_matrix_set_color(20, 66, 255, 0);
 
