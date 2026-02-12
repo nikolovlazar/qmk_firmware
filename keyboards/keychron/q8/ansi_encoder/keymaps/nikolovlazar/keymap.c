@@ -46,10 +46,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     // Mac Layer 1
     [_FN1] = LAYOUT_ansi_69(
-        _______, _______,        _______,  _______, KC_MPRV,      KC_MPLY, KC_MNXT, KC_BRID, KC_BRIU, _______, _______,  _______,  _______,  _______,  _______,
-        _______, _______,        _______,  MS_BTN1, MS_BTN2,      KC_VOLU, _______, _______, _______, _______, _______,  _______,  _______,  _______,  _______,
-        _______, LGUI(KC_RBRC),  KC_HOME,  KC_PGUP, LSG(KC_RBRC), KC_VOLD, _______, _______, _______, _______, _______,  _______,  _______,  _______,
-        _______, LGUI(KC_LBRC),  KC_END,   KC_PGDN, LSG(KC_LBRC), KC_MUTE, _______, _______, _______, _______, _______,  _______,  _______,  _______,
+        _______, _______,        _______,  _______, _______,      _______, _______, _______, _______, _______, _______,  _______,  _______,  _______,  _______,
+        _______, _______,        _______,  MS_BTN1, MS_BTN2,      _______, _______, _______, _______, _______, _______,  _______,  _______,  _______,  _______,
+        _______, LGUI(KC_RBRC),  KC_HOME,  KC_PGUP, LSG(KC_RBRC), _______, _______, _______, _______, _______, _______,  _______,  _______,  _______,
+        _______, LGUI(KC_LBRC),  KC_END,   KC_PGDN, LSG(KC_LBRC), _______, _______, _______, _______, _______, _______,  _______,  _______,  _______,
         _______, _______,        _______,  _______, _______,      _______, _______, _______, _______, _______, _______),
 
     // Windows Layer 1
@@ -90,23 +90,13 @@ bool rgb_matrix_indicators_advanced_user(uint8_t led_min, uint8_t led_max) {
         }
 
         if (layer == 2) {
-            rgb_matrix_set_color(4, 1, 238, 255);
-            rgb_matrix_set_color(5, 1, 238, 255);
-            rgb_matrix_set_color(6, 1, 238, 255);
-            rgb_matrix_set_color(7, 1, 238, 255);
-            rgb_matrix_set_color(8, 1, 238, 255);
-
-            rgb_matrix_set_color(20, 66, 255, 0);
-
             rgb_matrix_set_color(32, 245, 9, 9);
             rgb_matrix_set_color(33, 0, 14, 255);
             rgb_matrix_set_color(34, 0, 14, 255);
-            rgb_matrix_set_color(35, 66, 255, 0);
 
             rgb_matrix_set_color(46, 245, 9, 9);
             rgb_matrix_set_color(47, 0, 14, 255);
             rgb_matrix_set_color(48, 0, 14, 255);
-            rgb_matrix_set_color(49, 66, 255, 0);
         } else if (layer == 4) {
             rgb_matrix_set_color(16, 255, 255, 255);
             rgb_matrix_set_color(17, 255, 255, 255);
